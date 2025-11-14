@@ -277,13 +277,13 @@
             <div class="col-md-4">
                 <h3>Curriculum Vitae</h3>
                 <a href="CV_styled_2025_EN.html" class="btn btn-success" target="_blank">View full CV</a>
-                <h3>E-mail</h3>
-                <button class="btn btn-primary" onclick="showEmail()">Show my email</button>
+                <h3>Email</h3>
+                <button class="btn btn-success" onclick="showEmail()">Show email</button>
                 <p id="email" style="display:none; margin-top:10px;"></p>
                 <script>
                     function showEmail() {
                     // You can obfuscate the email a bit to reduce spam bots
-                    const email = "escolasticodennis" + "at" + "gmail.com";
+                    const email = "escolasticodennis" + "[at]" + "gmail.com";
                     document.getElementById("email").textContent = email;
                     document.getElementById("email").style.display = "block";
                     }
