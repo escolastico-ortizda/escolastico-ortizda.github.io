@@ -278,14 +278,19 @@
                 <h3>Curriculum Vitae</h3>
                 <a href="CV_styled_2025_EN.html" class="btn btn-success" target="_blank">View full CV</a>
                 <h3>Email</h3>
-                <button class="btn btn-success" onclick="showEmail()">Show email</button>
+                <button class="btn btn-success" onclick="toggleEmail()">Show email</button>
                 <p id="email" style="display:none; margin-top:10px;"></p>
                 <script>
-                    function showEmail() {
-                    // You can obfuscate the email a bit to reduce spam bots
-                    const email = "escolasticodennis" + "[at]" + "gmail.com";
-                    document.getElementById("email").textContent = email;
-                    document.getElementById("email").style.display = "block";
+                    function toggleEmail() {
+                        const emailElement = document.getElementById("email");
+                        // Email obfuscated to reduce spam scraping
+                        const email = "escolasticodennis" + "[at]" + "gmail.com";
+                        if (emailElement.style.display === "none") {
+                            emailElement.textContent = email;
+                            emailElement.style.display = "block";
+                        } else {
+                            emailElement.style.display = "none";
+                        }
                     }
                 </script>
                 <h3>Social Network</h3>
